@@ -1,0 +1,24 @@
+.btn {
+    background-color: $color-white;
+    border: 1px solid $color-white;
+    text-transform: uppercase;
+    @include font('Inter', 20px, 600, $color-black);
+    padding: 14px;
+    @include d-flex(center, center);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn--primary {
+    background-color: $color-white;
+    border: 1px solid $color-white;
+    color: $color-black;
+}
+
+.btn:hover,
+.btn--primary:hover {
+    background-color: transparent;
+    color: $color-white;
+    border-color: $color-white;
+}

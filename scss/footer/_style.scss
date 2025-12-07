@@ -1,0 +1,56 @@
+.hero__footer {
+    @include d-flex(center, space-between, 20px);
+}
+
+.social-icons {
+    @include d-flex(center, center, 48px);
+
+    @media only screen and (max-width: $breakpoint-tablet) {
+        display: none;
+    }
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.swipe-up {
+    margin-top: -60px;
+    width: 64px;
+    height: 72px;
+    border-radius: 52px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.45) 100%);
+    @include d-flex(center, center);
+
+    @media only screen and (max-width: $breakpoint-tablet) {
+        width: 38px;
+        height: 42px;
+        margin-top: 0;
+    }
+
+    img {
+        transform: rotate(90deg);
+        opacity: 0.4;
+
+        @media only screen and (max-width: $breakpoint-tablet) {
+            width: 20px;
+        }
+    }
+}
+
+.arrows {
+    @include d-flex(center, center, 40px);
+
+    @media only screen and (max-width: $breakpoint-tablet) {
+        display: none;
+    }
+}
+
+.arrow img {
+    opacity: 0.4;
+}
+
+.left__arrow {
+    transform: rotate(180deg);
+}

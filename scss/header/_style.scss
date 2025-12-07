@@ -1,0 +1,64 @@
+.header {
+    width: 100%;
+    position: absolute;
+    top: 55px;
+
+    @media only screen and (max-width: 769px) {
+        top: 30px;
+    }
+}
+
+.header__wrapper {
+    padding: 10px;
+    @include d-flex(center, space-between);
+    background-color: $color-gray-light;
+    border-radius: 36px;
+
+    @media only screen and (max-width: 769px) {
+        background-color: transparent;
+    }
+
+    button {
+        width: 160px;
+
+        @media only screen and (max-width: 769px) {
+            display: none;
+        }
+    }
+}
+
+.logo {
+    width: 168px;
+    height: 36px;
+    margin-left: 40px;
+
+    @media only screen and (max-width: 769px) {
+        width: 100px;
+        height: 22px;
+        margin-left: 0;
+    }
+}
+
+.header__nav {
+    @media only screen and (max-width: 769px) {
+        display: none;
+    }
+}
+
+.nav__list {
+    @include d-flex(center, center, 40px);
+}
+
+.nav__link {
+    text-transform: uppercase;
+    @include font('Inter', 20px, 600, $color-white);
+}
+
+.header__bar {
+    display: none;
+
+    @media only screen and (max-width: 769px) {
+        display: inline-block;
+        cursor: pointer;
+    }
+}

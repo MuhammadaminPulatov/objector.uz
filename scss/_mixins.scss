@@ -1,0 +1,22 @@
+@mixin d-flex($align: flex-start,
+  $justify: flex-start,
+  $gap: 0,
+  $direction: row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+  flex-direction: $direction;
+}
+
+@mixin font($family: inherit,
+  $size: 16px,
+  $weight: 400,
+  $color: inherit,
+  $line: normal) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $line;
+}
