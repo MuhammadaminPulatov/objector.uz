@@ -8,7 +8,7 @@
 
     @media only screen and (max-width: $breakpoint-tablet) {
         @include d-flex(center, start, 20px, column);
-        height: 100vh;
+        height: 932px;
         padding-bottom: 16px;
     }
 
