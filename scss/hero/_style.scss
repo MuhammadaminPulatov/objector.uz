@@ -8,7 +8,7 @@
 
     @media only screen and (max-width: $breakpoint-tablet) {
         @include d-flex(center, start, 20px, column);
-        height: 932px;
+        height: 100vh;
         padding-bottom: 16px;
     }
 
@@ -24,7 +24,7 @@
 
     .hero__content {
         margin-top: -100px;
-        width: 590px;
+        width: 100%;
 
         @media only screen and (max-width: $breakpoint-tablet) {
             width: 430px;
